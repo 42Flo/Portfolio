@@ -1,5 +1,9 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "@/style/globals.css";
+import classNames from "classnames";
+import { FontCarterOne, FontChakraPetch, FontInter } from "@/style/fonts/fonts";
+import Header from "@/components/Header";
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -8,8 +12,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
-      <body>
+    <html id="top" lang="en">
+      <body className={classNames(FontInter.variable, FontCarterOne.variable, FontChakraPetch.variable)}>
+        <Header />
         {children}
       </body>
     </html>
