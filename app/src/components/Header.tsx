@@ -35,11 +35,11 @@ export default function Header() {
         </div>
         <div className={style.title}>
           <Link href="#top">
-            <h3>
+            <h4>
               <span>{"< "}</span>
               florg.dev
               <span>{" />"}</span>
-            </h3>
+            </h4>
           </Link>
         </div>
         <Link href='#contact' className={style.contact}>
