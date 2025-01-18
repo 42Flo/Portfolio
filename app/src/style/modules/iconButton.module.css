@@ -1,0 +1,21 @@
+.iconButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    background: var(--secondary);
+    padding: 0.75rem;
+    border-radius: 50%;
+    transition: box-shadow 0.3s ease;
+    /*box-shadow: 0 0 20px 0 color-mix(in srgb, var(--primary-accent), transparent 70%);*/
+
+    svg {
+        width: 1.5rem;
+        height: 1.5rem;
+        fill: var(--light_neutral);
+    }
+
+    &:hover {
+        box-shadow: 0 0 20px 0 color-mix(in srgb, var(--primary-accent), transparent 70%);
+    }
+}

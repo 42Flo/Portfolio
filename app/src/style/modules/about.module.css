@@ -20,6 +20,11 @@
     p {
         color: var(--grey-accent);
     }
+
+    .icons {
+        display: flex;
+        gap: 20px;
+    }
 }
 
 .imageContainer {

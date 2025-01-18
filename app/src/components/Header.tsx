@@ -12,6 +12,7 @@ export default function Header() {
       setNavbarBgVisible(window.scrollY > 0);
     }
 
+    handleScroll();
     window.addEventListener("scroll", handleScroll);
 
     return (() => {
@@ -23,28 +24,28 @@ export default function Header() {
     <header className={style.header}>
       <nav className={classNames(style.navbar, navbarBgVisible && style.navbarBg)}>
         <div className={style.leftNavbar}>
-          <Link href="#about">
+          <Link href="#about" className={style.navLink}>
             <p>About</p>
           </Link>
-          <Link href="#skills">
+          <Link href="#skills" className={style.navLink}>
             <p>Skills</p>
           </Link>
-          <Link href="#projects">
+          <Link href="#projects" className={style.navLink}>
             <p>Projects</p>
           </Link>
         </div>
         <div className={style.title}>
           <Link href="#top">
             <h4>
-              <span>{"< "}</span>
-              florg.dev
-              <span>{" />"}</span>
+              <span>{"< "}</span>florg.dev<span>{" />"}</span>
             </h4>
           </Link>
         </div>
-        <Link href='#contact' className={style.contact}>
-          <p>Contact</p>
-        </Link>
+        <div className={style.contact}>
+          <Link href='#contact' className={style.navLink}>
+            <p>Contact</p>
+          </Link>
+        </div>
       </nav>
     </header>
   );

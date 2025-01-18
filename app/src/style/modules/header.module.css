@@ -19,22 +19,11 @@
     transition: background-color 0.5s ease, box-shadow 0.5s ease, backdrop-filter 0.5s ease;
 }
 
-.navbarBg {
-    background-color: color-mix(in srgb, var(--near-black), transparent 25%);
-    backdrop-filter: blur(5px);
-    box-shadow: 0 0 20px 0 color-mix(in srgb, var(--primary-accent), transparent 70%);
-}
 
-.leftNavbar {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+.navLink {
+    position: relative;
 
-    a {
-        position: relative;
-    }
-
-    a:after {
+    &:after {
         content: "";
         position: absolute;
         bottom: 0;
@@ -48,10 +37,22 @@
         transform: scale(0, 1);
     }
 
-    a:hover:after {
+    &:hover:after {
         opacity: 1;
         transform: scale(1);
     }
+}
+
+.navbarBg {
+    background-color: color-mix(in srgb, var(--near-black), transparent 25%);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 20px 0 color-mix(in srgb, var(--primary-accent), transparent 70%);
+}
+
+.leftNavbar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .title {

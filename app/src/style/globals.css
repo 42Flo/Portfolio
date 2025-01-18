@@ -62,3 +62,10 @@ h3 {
 h4 {
   font-size: clamp(var(--font-size-base), 2vw + 1rem, var(--font-size-large));
 }
+
+button {
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
