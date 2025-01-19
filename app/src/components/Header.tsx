@@ -27,9 +27,6 @@ export default function Header() {
           <Link href="#about" className={style.navLink}>
             <p>About</p>
           </Link>
-          <Link href="#skills" className={style.navLink}>
-            <p>Skills</p>
-          </Link>
           <Link href="#projects" className={style.navLink}>
             <p>Projects</p>
           </Link>
