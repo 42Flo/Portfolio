@@ -39,9 +39,7 @@ export default function About() {
           <Image src={imageFlo} alt={'me'}/>
         </div>
       </div>
-      {/*<div className={style.skillContainer}>*/}
-        <SkillsCarousel/>
-      {/*</div>*/}
+      <SkillsCarousel/>
     </section>
   )
 }

@@ -1,3 +1,5 @@
+@use '../breakpoints';
+
 .landing {
     position: sticky;
     inset: 0;
@@ -10,8 +12,12 @@
     align-items: center;
     background: radial-gradient(circle, var(--primary-accent) 3%, var(--primary) 91%, var(--near-black) 100%);
     text-align: center;
-    padding: var(--page-padding);
+    padding: 9vw;
     font-family: var(--font-chakra-petch);
+
+    @media (max-width: breakpoints.$tablet) {
+        padding: var(--page-padding);
+    }
 
     h1 {
         position: relative;

@@ -44,9 +44,8 @@ export default function SkillsCarousel() {
             {icon}
           </div>
         ))}
-        {/* Duplicate slides for seamless loop */}
         {skillsIcons.map((icon, idx) => (
-          <div key={`first-${idx}`} className={style.slide}>
+          <div key={`second-${idx}`} className={style.slide}>
             {icon}
           </div>
         ))}
