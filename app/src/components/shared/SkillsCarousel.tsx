@@ -13,7 +13,7 @@ import MongoDBIcon from '@/components/shared/icons/MongoDBIcon';
 import GitIcon from '@/components/shared/icons/GitIcon';
 import DockerIcon from '@/components/shared/icons/DockerIcon';
 import FigmaIcon from '@/components/shared/icons/FigmaIcon';
-import style from '@/style/modules/skillsCarousel.module.css';
+import style from '@/style/modules/skillsCarousel.module.scss';
 
 
 const skillsIcons = [

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "@/style/globals.css";
+import "@/style/globals.scss";
 import classNames from "classnames";
 import { FontCarterOne, FontChakraPetch, FontInter } from "@/style/fonts/fonts";
 import Header from "@/components/Header";

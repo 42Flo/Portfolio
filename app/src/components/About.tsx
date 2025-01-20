@@ -1,4 +1,4 @@
-import style from '@/style/modules/about.module.css';
+import style from '@/style/modules/about.module.scss';
 import Image from 'next/image';
 import imageFlo from '../../public/me.png';
 import IconButton from '@/components/shared/IconButton';
@@ -20,7 +20,7 @@ export default function About() {
             Paris</b>.
             Over the years, I’ve co-founded a tech company and taken on numerous freelance projects,
             which allowed me to deepen my expertise in <b>full-stack development</b>,
-            <b> complex system architecture </b> and <b>AI integration</b>.
+            <b> system architecture </b> and <b>AI integration</b>.
             My approach blends creativity and technical rigor, whether I’m designing scalable back-end systems,
             developing intuitive user interfaces, or harnessing the power of machine learning.
             I love tackling challenging problems, collaborating with driven teams,

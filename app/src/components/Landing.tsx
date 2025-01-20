@@ -1,5 +1,5 @@
 'use client'
-import style from "@/style/modules/landing.module.css";
+import style from "@/style/modules/landing.module.scss";
 import { useEffect, useState } from 'react';
 import classNames from 'classnames';
 

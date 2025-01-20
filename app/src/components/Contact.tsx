@@ -1,4 +1,4 @@
-import style from "@/style/modules/contact.module.css";
+import style from "@/style/modules/contact.module.scss";
 
 export default function Contact() {
   return (

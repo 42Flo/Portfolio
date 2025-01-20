@@ -1,0 +1,51 @@
+.burgerCrossIcon {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: transform 400ms;
+  user-select: none;
+
+  .line {
+    fill: none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke: var(--light_neutral);
+    stroke-width: 5.5;
+    stroke-linecap: round;
+  }
+
+  .lineTop {
+    @extend .line;
+    stroke-dasharray: 40 160;
+  }
+
+  .lineTop.active {
+    stroke-dashoffset: -64px;
+  }
+
+  .lineMiddle {
+    @extend .line;
+    stroke-dasharray: 40 142;
+    transform-origin: 50%;
+    transition: transform 400ms;
+  }
+
+  .lineMiddle.active {
+    transform: rotate(90deg);
+
+  }
+
+  .lineBottom {
+    @extend .line;
+    stroke-dasharray: 40 85;
+    transform-origin: 50%;
+    transition: transform 400ms, stroke-dashoffset 400ms;
+  }
+
+  .lineBottom.active {
+    stroke-dashoffset: -64px;
+  }
+}
+
+.burgerCrossIcon.active {
+  transform: rotate(45deg);
+}
