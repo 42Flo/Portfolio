@@ -50,6 +50,10 @@ export default function Header() {
     setNavbarActive(false);
   }
 
+  function handleTitleClick() {
+    window.location.href = '/';
+  }
+
   return (
     <>
       <header className={style.header}>
@@ -62,12 +66,10 @@ export default function Header() {
               <p>Projects</p>
             </Link>
           </div>
-          <div className={style.title}>
-            <Link href="#top" onClick={disableNavbarActive}>
+          <div className={style.title} onClick={handleTitleClick}>
               <h4>
                 <span>{"< "}</span>florg.dev<span>{" />"}</span>
               </h4>
-            </Link>
           </div>
           <div className={style.rightNavbar}>
             <Link href='#contact' className={style.navLink}>

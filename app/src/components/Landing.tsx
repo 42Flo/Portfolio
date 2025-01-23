@@ -2,6 +2,7 @@
 import style from "@/style/modules/landing.module.scss";
 import { useEffect, useState } from 'react';
 import classNames from 'classnames';
+import Flashlight from '@/components/shared/Flashlight';
 
 const fullText = 'Full Stack Developer and System Architect';
 
@@ -32,6 +33,7 @@ export default function Landing() {
       <h1 className={classNames(displayedText.length === fullText.length && style.animatedCaret)}>
         {displayedText}
       </h1>
+      <Flashlight />
     </section>
   );
 }
