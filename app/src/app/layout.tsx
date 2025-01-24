@@ -3,6 +3,7 @@ import "@/style/globals.scss";
 import classNames from "classnames";
 import { FontCarterOne, FontChakraPetch, FontInter } from "@/style/fonts/fonts";
 import Header from "@/components/Header";
+import Flashlight from '@/components/shared/Flashlight';
 
 
 export const metadata: Metadata = {
@@ -15,6 +16,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html id="top" lang="en">
       <body className={classNames(FontInter.variable, FontCarterOne.variable, FontChakraPetch.variable)}>
         <Header />
+        <Flashlight />
         {children}
       </body>
     </html>

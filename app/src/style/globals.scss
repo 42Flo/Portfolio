@@ -15,6 +15,11 @@ body {
   font-family: var(--font-inter);
   color: var(--light-neutral);
   background: var(--near-black);
+  cursor: none;
+
+  @media (max-width: breakpoints.$tablet) {
+    cursor: default;
+  }
 }
 
 * {
@@ -58,17 +63,9 @@ a {
   }
 }
 
-//@media (max-width: $breakpoint-tablet) {
-//  :root {
-//    // Padding
-//    --page-padding: 0 45px;
-//  }
-//}
-
 p {
-  //font-size: clamp(var(--font-size-base), 0.8vw + 2rem, var(--font-size-medium));
-  //font-size: var(--font-size-base);
   font-size: clamp(var(--font-size-base), 0.7799rem + 0.7042vw, var(--font-size-medium));
+  cursor: text;
 }
 
 h1 {
@@ -81,10 +78,12 @@ h2 {
 
 h3 {
   font-size: clamp(var(--font-size-medium), 0.7658rem + 1.5493vw, var(--font-size-xlarge));
+  cursor: text;
 }
 
 h4 {
   font-size: clamp(var(--font-size-medium), 1.118rem + 0.4225vw, var(--font-size-large));
+  cursor: text;
 }
 
 button {

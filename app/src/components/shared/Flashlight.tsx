@@ -1,3 +1,4 @@
+'use client'
 import { useEffect, useState } from "react";
 import style from '@/style/modules/flashlight.module.scss';
 
@@ -22,7 +23,7 @@ export default function Flashlight() {
       style={mousePos ? {
         background: `
           radial-gradient(
-            circle 300px at ${mousePos.x}px ${mousePos.y}px,
+            circle 5vmin at ${mousePos.x}px ${mousePos.y}px,
             var(--light-neutral),
             rgba(0, 0, 0, 0.1) 70%
           )

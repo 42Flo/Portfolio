@@ -33,7 +33,6 @@ export default function Landing() {
       <h1 className={classNames(displayedText.length === fullText.length && style.animatedCaret)}>
         {displayedText}
       </h1>
-      <Flashlight />
     </section>
   );
 }

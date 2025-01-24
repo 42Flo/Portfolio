@@ -10,13 +10,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: radial-gradient(circle, var(--primary-accent) 0%, var(--primary) 100%, var(--near-black) 100%);
-    //animation: breathing 10s ease-in-out infinite;
+    background-image: radial-gradient(circle, var(--primary-accent) 0%, var(--primary) 100%, var(--near-black) 100%);
     animation: growing-background 1s ease-in-out forwards;
     text-align: center;
     padding: 9vw;
     font-family: var(--font-chakra-petch);
-    cursor: none;
+    //cursor: none;
     background-repeat: no-repeat;
     background-position: center;
 
@@ -47,16 +46,6 @@
 @keyframes blink-caret {
     50% {
         opacity: 0;
-    }
-}
-
-@keyframes breathing {
-    0%, 100% {
-        background-size: 50% 50%;
-    }
-    50% {
-        /* Expand the radial gradient */
-        background-size: 100% 100%;
     }
 }
 

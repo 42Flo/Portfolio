@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from 'react';
 import classNames from 'classnames';
 import AnimatedBurgerCrossIcon from '@/components/shared/icons/AnimatedBurgerCrossIcon';
+import Flashlight from '@/components/shared/Flashlight';
 
 export default function Header() {
   const [navbarBgVisible, setNavbarBgVisible] = useState(false);
