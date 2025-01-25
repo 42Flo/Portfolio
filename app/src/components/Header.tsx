@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useEffect, useState } from 'react';
 import classNames from 'classnames';
 import AnimatedBurgerCrossIcon from '@/components/shared/icons/AnimatedBurgerCrossIcon';
-import Flashlight from '@/components/shared/Flashlight';
 
 export default function Header() {
   const [navbarBgVisible, setNavbarBgVisible] = useState(false);
@@ -12,7 +11,6 @@ export default function Header() {
 
   useEffect(() => {
     function handleScroll() {
-      console.log(window.scrollY)
       setNavbarBgVisible(window.scrollY > 0);
     }
 
@@ -26,7 +24,6 @@ export default function Header() {
 
   useEffect(() => {
     function handleResize() {
-      console.log(window.innerWidth)
       if (window.innerWidth > 1024) {
         document.body.style.overflow = '';
       } else if (navbarActive) {

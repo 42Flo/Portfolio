@@ -1,0 +1,48 @@
+@use '../breakpoints';
+
+.horizontalScrollContainer {
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+
+  .childrenContainer {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+
+    @media (max-width: breakpoints.$tablet) {
+      overflow-x: auto;
+    }
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .navigationButtonWrapper {
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    width: 70px;
+    height: 100%;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    mix-blend-mode: difference;
+    cursor: pointer;
+
+    svg {
+      z-index: 6;
+      width: 100%;
+      fill: white;
+    }
+
+    &:last-child {
+      left: unset;
+      right: 0;
+      rotate: 180deg;
+    }
+  }
+}

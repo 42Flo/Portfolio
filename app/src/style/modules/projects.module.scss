@@ -1,3 +1,5 @@
+@use '../breakpoints';
+
 .projects {
     position: relative;
     z-index: 1;
@@ -10,16 +12,30 @@
     align-items: center;
     padding: var(--page-padding);
     padding-top: 70px;
-    gap: 70px;
+    padding-bottom: 70px;
+    gap: 6vh;
 
     h1 {
         font-family: var(--font-chakra-petch);
+        user-select: none;
     }
 
     .projectsGrid {
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         gap: 36px;
+
+        @media (max-width: breakpoints.$desktop-large) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @media (max-width: breakpoints.$desktop-medium) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (max-width: breakpoints.$mobile) {
+            grid-template-columns: 1fr;
+        }
     }
 }
