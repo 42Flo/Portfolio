@@ -57,20 +57,20 @@ export default function Header() {
       <header className={style.header}>
         <nav className={classNames(style.navbar, (navbarBgVisible || navbarActive) && style.navbarBg)}>
           <div className={style.leftNavbar}>
-            <Link href="#about" className={style.navLink}>
+            <Link href="#about" className={classNames(style.navLink, 'clickable')}>
               <p>About</p>
             </Link>
-            <Link href="#projects" className={style.navLink}>
+            <Link href="#projects" className={classNames(style.navLink, 'clickable')}>
               <p>Projects</p>
             </Link>
           </div>
-          <div className={style.title} onClick={handleTitleClick}>
+          <div className={classNames(style.title, 'clickable')} onClick={handleTitleClick}>
               <h4>
                 <span>{"< "}</span>florg.dev<span>{" />"}</span>
               </h4>
           </div>
           <div className={style.rightNavbar}>
-            <Link href='#contact' className={style.navLink}>
+            <Link href='#contact' className={classNames(style.navLink, 'clickable')}>
               <p>Contact</p>
             </Link>
             <AnimatedBurgerCrossIcon

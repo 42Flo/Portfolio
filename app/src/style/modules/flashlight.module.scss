@@ -6,11 +6,18 @@
   height: 100vh;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 90;
   pointer-events: none;
   mix-blend-mode: difference;
+
+  --flashlight-color: var(--light-neutral);
 
   @media (max-width: breakpoints.$tablet) {
     display: none;
   }
+}
+
+:global(body:has(.clickable:hover)) .flashlight {
+  //--flashlight-color: #d10541;
+  --flashlight-color: #fdc764;
 }

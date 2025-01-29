@@ -21,7 +21,7 @@ export default function ProjectBox({ title, description, images, url }: Props) {
         ))}
       </HorizontalScrollContainer>
       <div className={style.titleDescription}>
-        {url !== undefined ? <a  href={url} target={'_blank'}>
+        {url !== undefined ? <a  href={url} target={'_blank'} className={'clickable'}>
           <h4>
             {title}
             <ArrowUpRightSquareIcon />

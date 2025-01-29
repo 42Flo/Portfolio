@@ -2,6 +2,7 @@
 import React, { ReactNode, useCallback, useRef, useState } from 'react';
 import style from '@/style/modules/horizontalScrollContainer.module.scss';
 import ChevronLeftIcon from '@/components/shared/icons/ChevronLeftIcon';
+import classNames from 'classnames';
 
 interface Props {
   children: ReactNode;
@@ -45,13 +46,19 @@ export default function HorizontalScrollContainer({ children }: Props) {
 
   return (
     <div className={style.horizontalScrollContainer}>
-      {showLeftButton && <div className={style.navigationButtonWrapper} onClick={() => handleButtonScroll('left')}>
+      {showLeftButton && <div
+        className={classNames(style.navigationButtonWrapper, 'clickable')}
+        onClick={() => handleButtonScroll('left')}
+      >
         <ChevronLeftIcon/>
       </div>}
       <div ref={childrenContainerCallbackRef} className={style.childrenContainer} onScroll={handleScroll}>
         {children}
       </div>
-      {showRightButton && <div className={style.navigationButtonWrapper} onClick={() => handleButtonScroll('right')}>
+      {showRightButton && <div
+        className={classNames(style.navigationButtonWrapper, 'clickable')}
+        onClick={() => handleButtonScroll('right')}
+      >
         <ChevronLeftIcon/>
       </div>}
     </div>

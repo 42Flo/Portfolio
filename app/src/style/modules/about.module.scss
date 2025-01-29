@@ -40,10 +40,6 @@
         width: 100%;
     }
 
-    h2 {
-        cursor: text;
-    }
-
     p {
         color: var(--grey-accent);
         font-size: clamp(var(--font-size-base), 0.7799rem + 0.7042vw, var(--font-size-large));
