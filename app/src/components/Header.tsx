@@ -3,7 +3,7 @@ import style from "@/style/modules/header.module.scss";
 import Link from "next/link";
 import { useEffect, useState } from 'react';
 import classNames from 'classnames';
-import AnimatedBurgerCrossIcon from '@/components/shared/icons/AnimatedBurgerCrossIcon';
+import AnimatedBurgerCrossIcon from '@/components/icons/AnimatedBurgerCrossIcon';
 
 export default function Header() {
   const [navbarBgVisible, setNavbarBgVisible] = useState(false);

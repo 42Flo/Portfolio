@@ -1,29 +1,29 @@
 import style from "@/style/modules/projects.module.scss";
-import ProjectBox from '@/components/shared/ProjectBox';
+import ProjectBox from '@/components/ProjectBox';
 
-import aicoleDashboardImage from '../../public/projects/aicole/aicoleDashboard.png';
-import aicoleLessonListImage from '../../public/projects/aicole/aicoleLessonList.png';
-import aicoleExercise from '../../public/projects/aicole/aicoleExercise.png';
-import aicoleLesson from '../../public/projects/aicole/aicoleLesson.png';
+import aicoleDashboardImage from '../../../public/projects/aicole/aicoleDashboard.png';
+import aicoleLessonListImage from '../../../public/projects/aicole/aicoleLessonList.png';
+import aicoleExercise from '../../../public/projects/aicole/aicoleExercise.png';
+import aicoleLesson from '../../../public/projects/aicole/aicoleLesson.png';
 
-import troiEventsImage from '../../public/projects/troi/troiEvents.png';
-import troiArtistsImage from '../../public/projects/troi/troiArtists.png';
-import troiMediaImage from '../../public/projects/troi/troiMedia.png';
+import troiEventsImage from '../../../public/projects/troi/troiEvents.png';
+import troiArtistsImage from '../../../public/projects/troi/troiArtists.png';
+import troiMediaImage from '../../../public/projects/troi/troiMedia.png';
 
-import poneyLandingImage from '../../public/projects/poneyFM/poneyLanding.png';
-import poneyArtistsImage from '../../public/projects/poneyFM/poneyArtist.png';
-import poneyMagImage from '../../public/projects/poneyFM/poneyMag.png';
-import poneyResidencyImage from '../../public/projects/poneyFM/poneyResidency.png';
+import poneyLandingImage from '../../../public/projects/poneyFM/poneyLanding.png';
+import poneyArtistsImage from '../../../public/projects/poneyFM/poneyArtist.png';
+import poneyMagImage from '../../../public/projects/poneyFM/poneyMag.png';
+import poneyResidencyImage from '../../../public/projects/poneyFM/poneyResidency.png';
 
-import bdLandingImage from '../../public/projects/binaryDeconstruction/bdLanding.png';
-import bdTotemsImage from '../../public/projects/binaryDeconstruction/bdTotems.png';
+import bdLandingImage from '../../../public/projects/binaryDeconstruction/bdLanding.png';
+import bdTotemsImage from '../../../public/projects/binaryDeconstruction/bdTotems.png';
 
-import mosaicPreparation from '../../public/projects/mosaic/mosaicPreparation.png';
-import mosaicRobotArm from '../../public/projects/mosaic/mosaicRobotArm.png';
-import mosaicResult from '../../public/projects/mosaic/mosaicResult.png';
+import mosaicPreparation from '../../../public/projects/mosaic/mosaicPreparation.png';
+import mosaicRobotArm from '../../../public/projects/mosaic/mosaicRobotArm.png';
+import mosaicResult from '../../../public/projects/mosaic/mosaicResult.png';
 
-import drCatalinLandingImage from '../../public/projects/drCatalin/drCatalingLanding.png';
-import drCatalinDoctorImage from '../../public/projects/drCatalin/drCatalinDoctor.png';
+import drCatalinLandingImage from '../../../public/projects/drCatalin/drCatalingLanding.png';
+import drCatalinDoctorImage from '../../../public/projects/drCatalin/drCatalinDoctor.png';
 
 export default function Projects() {
   return (

@@ -1,4 +1,4 @@
-.iconButton {
+.iconWrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,6 +16,6 @@
     }
 
     &:hover {
-        box-shadow: 0 0 20px 0 color-mix(in srgb, var(--primary-accent), transparent 70%);
+        box-shadow: var(--primary-box-shadow);
     }
 }

@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Header from '@/components/Header';
-import Flashlight from '@/components/shared/Flashlight';
+import Flashlight from '@/components/Flashlight';
 import classNames from 'classnames';
 import { FontCarterOne, FontChakraPetch, FontInter } from '@/style/fonts/fonts';
 import useIsTouchDevice from '@/lib/hooks/useIsTouchDevice';

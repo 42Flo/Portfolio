@@ -41,6 +41,8 @@ a {
   --grey-accent: #828C95;
   --near-black: #1E1E1E;
 
+  --primary-box-shadow: 0 0 20px 0 color-mix(in srgb, var(--primary-accent), transparent 70%);
+
   // Font sizes
   --font-size-small: 13px;
   --font-size-base: 16px;
@@ -49,6 +51,8 @@ a {
   --font-size-xlarge: 42px;
   --font-size-xxlarge: 68px;
   --font-size-xxxlarge: 110px;
+
+  --font-size-text: clamp(var(--font-size-base), 0.7799rem + 0.7042vw, var(--font-size-medium));
 
   // Padding
   --page-padding: 0 70px;
@@ -63,11 +67,13 @@ a {
 }
 
 p {
-  font-size: clamp(var(--font-size-base), 0.7799rem + 0.7042vw, var(--font-size-medium));
+  font-size: var(--font-size-text);
 }
 
 h1 {
   font-size: clamp(var(--font-size-large), 1.1285rem + 4.7887vw, var(--font-size-xxxlarge));
+  font-family: var(--font-chakra-petch);
+  user-select: none;
 }
 
 h2 {
@@ -82,8 +88,8 @@ h4 {
   font-size: clamp(var(--font-size-medium), 1.118rem + 0.4225vw, var(--font-size-large));
 }
 
-button {
-  outline: none;
-  border: none;
-  background: transparent;
-}
+//button {
+//  outline: none;
+//  border: none;
+//  background: transparent;
+//}

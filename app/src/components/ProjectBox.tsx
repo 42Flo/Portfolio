@@ -1,7 +1,7 @@
 import Image, { StaticImageData } from 'next/image';
 import style from '@/style/modules/projectBox.module.scss';
-import HorizontalScrollContainer from '@/components/shared/HorizontalScrollContainer';
-import ArrowUpRightSquareIcon from '@/components/shared/icons/ArrowUpRightSquareIcon';
+import HorizontalScrollContainer from '@/components/HorizontalScrollContainer';
+import ArrowUpRightSquareIcon from '@/components/icons/ArrowUpRightSquareIcon';
 
 interface Props {
   title: string;

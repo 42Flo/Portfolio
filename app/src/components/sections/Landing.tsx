@@ -2,7 +2,7 @@
 import style from "@/style/modules/landing.module.scss";
 import { useEffect, useState } from 'react';
 import classNames from 'classnames';
-import Flashlight from '@/components/shared/Flashlight';
+import Flashlight from '@/components/Flashlight';
 
 const fullText = 'Full Stack Developer and System Architect';
 

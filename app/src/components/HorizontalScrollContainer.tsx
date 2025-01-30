@@ -1,7 +1,7 @@
 'use client'
 import React, { ReactNode, useCallback, useRef, useState } from 'react';
 import style from '@/style/modules/horizontalScrollContainer.module.scss';
-import ChevronLeftIcon from '@/components/shared/icons/ChevronLeftIcon';
+import ChevronLeftIcon from '@/components/icons/ChevronLeftIcon';
 import classNames from 'classnames';
 
 interface Props {

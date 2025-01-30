@@ -4,7 +4,7 @@
   width: 100%;
   border-radius: 12px;
   //background-color: var(--near-black);
-  box-shadow: 0 0 20px 0 color-mix(in srgb, var(--primary-accent), transparent 70%);
+  box-shadow: var(--primary-box-shadow);
   //background-color: var(--secondary);
 
   .imageWrapper {

@@ -1,10 +1,10 @@
 import style from '@/style/modules/about.module.scss';
 import Image from 'next/image';
-import imageFlo from '../../public/me.png';
-import IconButton from '@/components/shared/IconButton';
-import GithubIcon from '@/components/shared/icons/GithubIcon';
-import LinkedinIcon from '@/components/shared/icons/LinkedinIcon';
-import SkillsCarousel from '@/components/shared/SkillsCarousel';
+import imageFlo from '../../../public/me.png';
+import IconWrapper from '@/components/IconWrapper';
+import GithubIcon from '@/components/icons/GithubIcon';
+import LinkedinIcon from '@/components/icons/LinkedinIcon';
+import SkillsCarousel from '@/components/SkillsCarousel';
 
 export default function About() {
   return (
@@ -27,12 +27,12 @@ export default function About() {
             and pushing the boundaries of what’s possible in technology.
           </p>
           <div className={style.icons}>
-            <IconButton path={'https://github.com/42Flo'}>
+            <IconWrapper path={'https://github.com/42Flo'}>
               <GithubIcon/>
-            </IconButton>
-            <IconButton path={'https://www.linkedin.com/in/florianreguliergayet'}>
+            </IconWrapper>
+            <IconWrapper path={'https://www.linkedin.com/in/florianreguliergayet'}>
               <LinkedinIcon/>
-            </IconButton>
+            </IconWrapper>
           </div>
         </div>
         <div className={style.imageContainer}>

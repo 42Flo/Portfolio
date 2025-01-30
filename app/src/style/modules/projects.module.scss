@@ -12,12 +12,12 @@
     align-items: center;
     padding: var(--page-padding);
     padding-top: 70px;
-    padding-bottom: 70px;
+    padding-bottom: 110px;
     gap: 6vh;
+    border-bottom: 1px solid var(--secondary);
 
-    h1 {
-        font-family: var(--font-chakra-petch);
-        user-select: none;
+    @media (max-width: breakpoints.$mobile) {
+        padding-bottom: 70px;
     }
 
     .projectsGrid {
