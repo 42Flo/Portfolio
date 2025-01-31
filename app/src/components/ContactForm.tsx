@@ -10,17 +10,28 @@ class ContactFormData {
   message: string = '';
 }
 
-type ContactFormStatus = 'idle' | 'submitting' | 'success';
+type ContactFormStatus = 'idle' | 'submitting' | 'success' | 'error';
 
 export default function ContactForm() {
   const [formData, setFormData] = useState<ContactFormData>(new ContactFormData());
   const [status, setStatus] = useState<ContactFormStatus>('idle');
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setStatus('submitting');
-    console.log(formData);
-    setStatus('success');
+    const response = await fetch('/api/send-email', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    })
+    if (response.ok) {
+      setStatus('success');
+    }
+    else {
+      setStatus('error')
+    }
   }
 
   function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) {
@@ -35,6 +46,8 @@ export default function ContactForm() {
         return 'Send'
       case 'submitting':
         return 'Sending...'
+      case 'error':
+        return 'An error occurred'
       default:
         return 'Successfully Sent'
     }
