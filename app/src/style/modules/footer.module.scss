@@ -1,0 +1,31 @@
+@use '../breakpoints';
+
+.footer {
+  width: 100%;
+  background-color: var(--primary);
+  padding: var(--page-padding);
+  padding-top: 45px;
+  padding-bottom: 45px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: breakpoints.$mobile) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  p, a {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    color: var(--grey-accent);
+    font-size: var(--font-size-text);
+
+    svg {
+      width: 1em;
+      fill: var(--grey-accent);
+    }
+  }
+}

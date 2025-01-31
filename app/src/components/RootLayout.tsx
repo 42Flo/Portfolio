@@ -6,6 +6,7 @@ import Flashlight from '@/components/Flashlight';
 import classNames from 'classnames';
 import { FontCarterOne, FontChakraPetch, FontInter } from '@/style/fonts/fonts';
 import useIsTouchDevice from '@/lib/hooks/useIsTouchDevice';
+import Footer from '@/components/Footer';
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   const isTouch = useIsTouchDevice();
@@ -15,6 +16,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <Header/>
       {!isTouch && <Flashlight/>}
       {children}
+      <Footer />
     </body>
   )
 }

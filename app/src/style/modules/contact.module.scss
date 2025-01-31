@@ -10,6 +10,7 @@
     padding-top: 110px;
     padding-bottom: 70px;
     gap: 45px;
+    border-bottom: 1px solid var(--secondary);
 
     @media (max-width: breakpoints.$tablet) {
         flex-direction: column;

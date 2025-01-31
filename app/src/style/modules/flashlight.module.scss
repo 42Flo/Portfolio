@@ -11,10 +11,6 @@
   mix-blend-mode: difference;
 
   --flashlight-color: var(--light-neutral);
-
-  @media (max-width: breakpoints.$tablet) {
-    display: none;
-  }
 }
 
 :global(body:has(.clickable:hover)) .flashlight {
