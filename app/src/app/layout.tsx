@@ -3,6 +3,8 @@ import "@/style/globals.scss";
 
 import React from 'react';
 import RootLayout from '@/components/RootLayout';
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 
 export const metadata: Metadata = {
@@ -17,6 +19,8 @@ export default function layout({ children }: Readonly<{ children: React.ReactNod
       <RootLayout>
         {children}
       </RootLayout>
+      <Analytics />
+      <SpeedInsights />
     </html>
   );
 }
