@@ -62,7 +62,7 @@ export default function ContactForm() {
           type={'text'}
           value={formData.name}
           onChange={handleChange}
-          placeholder={''}
+          placeholder={' '}
           required
         />
         <label htmlFor={'name'}>Name</label>
@@ -74,7 +74,7 @@ export default function ContactForm() {
           type={'email'}
           value={formData.email}
           onChange={handleChange}
-          placeholder={''}
+          placeholder={' '}
           required
         />
         <label htmlFor={'email'}>Email</label>
@@ -86,7 +86,7 @@ export default function ContactForm() {
           rows={10}
           value={formData.message}
           onChange={handleChange}
-          placeholder={''}
+          placeholder={' '}
           required
         />
         <label htmlFor={'message'}>Message</label>
