@@ -35,7 +35,7 @@ export default function Projects() {
           description='An AI-powered e-learning platform that generates personalized exercises,
             automates grading, provides real-time progress tracking and a built-in virtual tutor.'
           images={[aicoleDashboardImage, aicoleLessonListImage, aicoleExercise, aicoleLesson]}
-          url={'https://aicole.io'}
+          // url={'https://aicole.io'}
         />
         <ProjectBox
           title='Troi'
